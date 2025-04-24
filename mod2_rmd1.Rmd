@@ -3,7 +3,7 @@ title: "mod2 - R markdown doc 1"
 author: "Sia Gerard"
 date: "2025-04-21"
 output:
-  word_document: default
+  html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -104,3 +104,18 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r pressure 2, echo=TRUE, fig.height=5, fig.width=5}
+plot(pressure)
+```
+
+## Insert Tables
+```{r}
+knitr::kable(head(cars),
+             caption = "top six rows of cars dataset"
+             )
+```
+
+##insert and equation with laTec
+$$ Y= \beta_0 + \beta1x $$
+
