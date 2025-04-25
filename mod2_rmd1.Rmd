@@ -145,3 +145,36 @@ Here is an inline footnote ^[Inlines notes are easier to write, since you don't 
 
 [^1]: Here is the footnote.
 [^longnote]: Here's one with multiple blocks.
+
+## A slide with an inserted image
+
+Here is an image inserted
+
+![sunstar](sunstar.png)
+
+
+## A slide with a table
+
+```{r}
+knitr::kable(head(cars),
+             caption = "Top 6 Rows of Cars Dataset")
+```
+
+
+## A slide with an equation
+
+A simple linear regression equation
+
+$$ Y = \beta_0 + \beta_1x $$
+
+
+## A slide with an inserted image {.flexbox .vcenter}
+
+
+## A slide with 2 columns an image and a bulleted list {.columns-2}
+
+![](sunstar.png)
+
+- bullet 1
+- bullet 2
+- bullet 3
