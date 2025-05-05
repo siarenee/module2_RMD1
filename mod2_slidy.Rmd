@@ -2,7 +2,8 @@
 title: "Mod2_ioslides- add more text"
 author: "Sia Gerard"
 date: "2025-04-25"
-output: ioslides_presentation
+output:
+  slidy_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -33,15 +34,6 @@ summary(cars)
 plot(pressure)
 ```
 
-## slide with an image {.flexbox .Vcenter}
+## slide with an image
 
-![](sunstar.png)
-
-## slide with 2 columns {.columns-2}
-
-![](sunstar.png)
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
+![sunstar](sunstar.png)
